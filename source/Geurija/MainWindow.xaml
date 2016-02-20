@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Geurija"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525" Closed="OnClosed">
+        Title="MainWindow" Height="350" Width="525" Closed="OnClosed" Background="Gray">
     <Grid>
-        
+		<Menu VerticalAlignment="Top">
+			<MenuItem x:Name="File" Header="_File">
+				<MenuItem x:Name="NewFile" Header="_New File" Checked="NewFile_Checked"/>
+				<MenuItem x:Name="Open" Header="_Open" Checked="Open_Checked"/>
+				<MenuItem x:Name="Save" Header="_Save" Checked="Save_Checked"/>
+			</MenuItem>
+		</Menu>
     </Grid>
 </Window>

@@ -40,5 +40,20 @@ namespace Geurija
 		{
 			_MAIN.Close();
 		}
+
+		private void NewFile_Checked(object sender, RoutedEventArgs e)
+		{
+
+		}
+
+		private void Open_Checked(object sender, RoutedEventArgs e)
+		{
+
+		}
+
+		private void Save_Checked(object sender, RoutedEventArgs e)
+		{
+
+		}
 	}
 }
