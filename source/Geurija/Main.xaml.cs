@@ -10,35 +10,28 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Geurija
 {
 	/// <summary>
-	/// MainWindow.xaml에 대한 상호 작용 논리
+	/// Main.xaml에 대한 상호 작용 논리
 	/// </summary>
-	public partial class MainWindow : Window
+	public partial class Main : Window
 	{
-		private readonly Main _MAIN;
-
-		public MainWindow()
+		public Main()
 		{
 			InitializeComponent();
 
-			_MAIN = null;
-		}
-
-		public MainWindow(Main main)
-		{
-			InitializeComponent();
-
-			_MAIN = main;
-		}
-
-		private void OnClosed(object sender, EventArgs e)
-		{
-			_MAIN.Close();
+			var lodingWindow = new LodingWindow();
+			var lodingWindowResult = lodingWindow.ShowDialog();
+            if ( lodingWindowResult.HasValue && lodingWindowResult.Value )
+			{
+				var mainWindow = new MainWindow(this);
+				mainWindow.Show();
+			}
+			else
+				this.Close();
 		}
 	}
 }

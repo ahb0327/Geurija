@@ -1,12 +1,12 @@
-﻿<Window x:Class="Geurija.MainWindow"
+﻿<Window x:Class="Geurija.LodingWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Geurija"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525" Closed="OnClosed">
+        Title="LodingWindow" Height="300" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
     <Grid>
-        
-    </Grid>
+		<Label x:Name="label" Content="Loding......" HorizontalAlignment="Center" Height="50" Margin="0" VerticalAlignment="Center" Width="150" FontSize="30.667"/>
+	</Grid>
 </Window>
