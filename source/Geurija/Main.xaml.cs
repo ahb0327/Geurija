@@ -23,15 +23,15 @@ namespace Geurija
 		{
 			InitializeComponent();
 
-			var lodingWindow = new LodingWindow();
-			var lodingWindowResult = lodingWindow.ShowDialog();
-            if ( lodingWindowResult.HasValue && lodingWindowResult.Value )
-			{
+//			var lodingWindow = new LodingWindow();
+//			var lodingWindowResult = lodingWindow.ShowDialog();
+//			if ( lodingWindowResult.HasValue && lodingWindowResult.Value )
+//			{
 				var mainWindow = new MainWindow(this);
 				mainWindow.Show();
-			}
-			else
-				this.Close();
+//			}
+//			else
+//				this.Close();
 		}
 	}
 }
