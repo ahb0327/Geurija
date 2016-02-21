@@ -41,17 +41,17 @@ namespace Geurija
 			_MAIN.Close();
 		}
 
-		private void NewFile_Checked(object sender, RoutedEventArgs e)
+		private void NewFile_Click(object sender, RoutedEventArgs e)
+		{
+			new NewFileWindow().ShowDialog();	// [임시] 수정해야함.
+		}
+
+		private void Open_Click(object sender, RoutedEventArgs e)
 		{
 
 		}
 
-		private void Open_Checked(object sender, RoutedEventArgs e)
-		{
-
-		}
-
-		private void Save_Checked(object sender, RoutedEventArgs e)
+		private void Save_Click(object sender, RoutedEventArgs e)
 		{
 
 		}

@@ -8,10 +8,10 @@
         Title="MainWindow" Height="350" Width="525" Closed="OnClosed" Background="Gray">
     <Grid>
 		<Menu VerticalAlignment="Top">
-			<MenuItem x:Name="File" Header="_File">
-				<MenuItem x:Name="NewFile" Header="_New File" Checked="NewFile_Checked"/>
-				<MenuItem x:Name="Open" Header="_Open" Checked="Open_Checked"/>
-				<MenuItem x:Name="Save" Header="_Save" Checked="Save_Checked"/>
+			<MenuItem x:Name="file" Header="_File">
+				<MenuItem x:Name="newFile" Header="_New File" Click="NewFile_Click"/>
+				<MenuItem x:Name="open" Header="_Open" Click="Open_Click"/>
+				<MenuItem x:Name="save" Header="_Save" Click="Save_Click"/>
 			</MenuItem>
 		</Menu>
     </Grid>
